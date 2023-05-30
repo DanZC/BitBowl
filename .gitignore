@@ -1,0 +1,10 @@
+/build
+/assets/images/*.gal
+/test
+*.tiled-project
+*.tiled-session
+*.gal
+/.vscode
+*.pal
+/node_modules
+package-lock.json

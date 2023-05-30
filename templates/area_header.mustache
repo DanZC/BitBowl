@@ -1,0 +1,18 @@
+#pragma once
+
+#include "../../wasm4.h"
+
+// {{name}}
+
+// Area data
+#define {{name}}AreaWidth {{width}}
+#define {{name}}AreaHeight {{height}}
+extern const uint8_t {{name}}_area_data[{{area_data_length}}];
+
+// Object data
+{{#objects}}
+#define {{name}}Coord {{x}}, {{y}}
+#define {{name}}Type  {{type}}
+{{/objects}}
+
+#define {{name}}ObjCount {{objectCount}}

@@ -1,0 +1,14 @@
+#ifndef DATA_GRAPHICS_HPP
+#define DATA_GRAPHICS_HPP
+
+#include "../wasm4.h"
+
+{{#sprites}}
+// {{name}}
+#define {{name}}Width {{width}}
+#define {{name}}Height {{height}}
+#define {{name}}Flags {{flagsHumanReadable}}
+extern const uint8_t {{name}}[{{length}}];
+{{/sprites}}
+
+#endif //DATA_GRAPHICS_HPP
